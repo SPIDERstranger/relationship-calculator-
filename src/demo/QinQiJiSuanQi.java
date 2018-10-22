@@ -39,7 +39,7 @@ public class QinQiJiSuanQi extends JFrame {
 	 * 2018/10/13 修改了出现分歧时输出窗口的输出，修复了AC时按键不完全屏蔽的bug 
 	 * 2018/10/14 修改了屏蔽按键时的bug，优化找出分歧的代码
 	 * 2018/10/15 更改了界面颜色，更改按键尺寸
-	 * 2018/10/17 增加了调皮的彩蛋,添加了批处理文件运行和打包成jar文件，更改了data的读取方式
+	 * 2018/10/17 增加了调皮的彩蛋,添加了批处理文件运行和打包成jar文件，更改了data的读取方式，输入方式改进
 	 */
 	private static final long serialVersionUID = 1L;
 	static Hashtable<String, String> dataHashtable = new Hashtable<String, String>();
@@ -466,7 +466,7 @@ class ButtonListener implements ActionListener {
 	
 	
 	
-	//⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇彩蛋文本⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇
+	//???????????????????????????????????彩蛋文本??????????????????????????????????
 	void inputTextTooLong() {
 
 		if (hmoutSize > 3 && hmoutSize < 6) {

@@ -1,15 +1,15 @@
-package demo;
+ï»¿package demo;
 /**
- * ·ÖÎöÊı¾İµÄÀà
+ * åˆ†ææ•°æ®çš„ç±»
  */
 public class StringSubClass {
 	
 	/**
-	 * µ¼³öÏàÓ¦À¨ºÅÄÚµÄ×Ö·û
-	 * @param tempString Õû¶Î×Ö·û´®
-	 * @param upBarcket Ç°À¨ºÅ
-	 * @param downBarcket ºóÀ¨ºÅ 
-	 * @return ·µ»ØÏàÓ¦À¨ºÅÄÚµÄÄÚÈİ
+	 * å¯¼å‡ºç›¸åº”æ‹¬å·å†…çš„å­—ç¬¦
+	 * @param tempString æ•´æ®µå­—ç¬¦ä¸²
+	 * @param upBarcket å‰æ‹¬å·
+	 * @param downBarcket åæ‹¬å· 
+	 * @return è¿”å›ç›¸åº”æ‹¬å·å†…çš„å†…å®¹
 	 */
 	public String subStringOne(String tempString, String upBarcket, String downBarcket) {
 		return tempString.substring(tempString.indexOf(upBarcket) + 1, tempString.indexOf(downBarcket));
@@ -17,11 +17,11 @@ public class StringSubClass {
 
 
 	/**
-	 * µ¼³öÀ¨ºÅÄÚËùÓĞµÄ×Ö·û´®
-	 * @param tempString ĞèÒªµ¼³öµÄ×Ö·û´®
-	 * @param upBarcket Ç°À¨ºÅ
-	 * @param downBarcket ºóÀ¨ºÅ
-	 * @return ·µ»ØÀ¨ºÅÄÚÏàÓ¦µÄÄÚÈİ
+	 * å¯¼å‡ºæ‹¬å·å†…æ‰€æœ‰çš„å­—ç¬¦ä¸²
+	 * @param tempString éœ€è¦å¯¼å‡ºçš„å­—ç¬¦ä¸²
+	 * @param upBarcket å‰æ‹¬å·
+	 * @param downBarcket åæ‹¬å·
+	 * @return è¿”å›æ‹¬å·å†…ç›¸åº”çš„å†…å®¹
 	 */
 	public String[] subStringAll(String tempString, String upBarcket, String downBarcket) {
 
@@ -52,8 +52,8 @@ public class StringSubClass {
 	
 	public static void main(String[] args) {
 		StringSubClass subClass = new StringSubClass();
-		subClass.subStringOne("[²»´æÔÚ]{(¸¸-²»´æÔÚ)(Ä¸-²»´æÔÚ)(ĞÖ-²»´æÔÚ)(µÜ-²»´æÔÚ)(½ã-²»´æÔÚ)(ÃÃ-²»´æÔÚ)(·ò-²»´æÔÚ)(ÆŞ-²»´æÔÚ)(¶ù-²»´æÔÚ)(Å®-²»´æÔÚ)}", "[","]");
-		subClass.subStringAll("(¸¸-fu)(Ä¸-mu)(ĞÖ-²»´æÔÚ)(µÜ-²»´æÔÚ)(½ã-²»´æÔÚ)(ÃÃ-²»´æÔÚ)(·ò-²»´æÔÚ)(ÆŞ-²»´æÔÚ)(¶ù-²»´æÔÚ)(Å®-²»´æÔÚ)", "(", ")");
+		subClass.subStringOne("[ä¸å­˜åœ¨]{(çˆ¶-ä¸å­˜åœ¨)(æ¯-ä¸å­˜åœ¨)(å…„-ä¸å­˜åœ¨)(å¼Ÿ-ä¸å­˜åœ¨)(å§-ä¸å­˜åœ¨)(å¦¹-ä¸å­˜åœ¨)(å¤«-ä¸å­˜åœ¨)(å¦»-ä¸å­˜åœ¨)(å„¿-ä¸å­˜åœ¨)(å¥³-ä¸å­˜åœ¨)}", "[","]");
+		subClass.subStringAll("(çˆ¶-fu)(æ¯-mu)(å…„-ä¸å­˜åœ¨)(å¼Ÿ-ä¸å­˜åœ¨)(å§-ä¸å­˜åœ¨)(å¦¹-ä¸å­˜åœ¨)(å¤«-ä¸å­˜åœ¨)(å¦»-ä¸å­˜åœ¨)(å„¿-ä¸å­˜åœ¨)(å¥³-ä¸å­˜åœ¨)", "(", ")");
 		subClass.subStringAll("<gege><didi>", "<",">" );
 	}
 
